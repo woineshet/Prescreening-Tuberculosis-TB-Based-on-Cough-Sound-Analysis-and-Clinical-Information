@@ -1,4 +1,6 @@
 import streamlit as st
+import platform
+st.write("Python version:", platform.python_version())
 import numpy as np
 import tensorflow as tf
 import soundfile as sf
@@ -7,6 +9,8 @@ from scipy.io.wavfile import write
 from tensorflow.keras.models import load_model
 import os
 import librosa
+
+
 
 # Suppress TensorFlow logging
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
